@@ -1,0 +1,175 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Barlow Condensed', sans-serif;
+}
+
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0c677e;
+  color: white;
+  flex-wrap: wrap; 
+}
+
+
+#logo {
+  width: 50px;
+  flex: 1;
+}
+
+
+#student-name {
+  flex: 2;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+.nav-bar {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 1rem;
+  display: none;
+  position :absolute; 
+  flex-direction: column;             
+  right: 2rem;
+  background: #0c677e;
+
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-bar a:hover {
+  background: #2A3550;
+  border-radius: 5px;
+}
+#menu-toggle{
+    font-size:1.6rem;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+
+
+
+.nav-bar.show{
+    display:flex;
+
+}
+
+
+main{
+    padding:1rem;
+    background:#E6E9EE;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+}
+
+
+.card{
+    background:#FAFAFA;
+    border:3px solid #C9CED6;
+    border-radius:15px;
+}
+
+
+h2{
+    background:#0c677e;
+    color:white;
+    text-align:center;
+    padding:.5rem;
+}
+
+.about-me{
+    display:grid;
+    grid-template-columns:1fr;
+    padding:1rem;
+}
+
+#me{
+    width:150px;
+    margin:auto;
+    display:block;
+}
+
+.course-filters{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:10px;
+    padding:1rem;
+    height: 3rem;
+}
+#course-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:10px;
+    padding:1rem;
+}
+
+.completed{
+    background:#0c677e;
+    color:white;
+    text-align:center;
+    padding:.5rem;
+}
+
+.not-completed{
+    background:#C9CED6;
+    text-align:center;
+    padding:.5rem;
+}
+
+footer{
+    background:#0c677e;
+    color:white;
+    text-align:center;
+    padding:1rem;
+}
+
+.footer-nav ul{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    list-style:none;
+    margin-bottom:.5rem;
+}
+
+.footer-nav i{
+font-size: 1.8rem;
+color: white;
+transition: 0.3s;
+}
+
+.footer-nav i:hover{
+color: #C9CED6;
+transform: scale(1.2);
+}
+
+#logo{
+    width:50px;
+    display:block;
+    margin:auto;
+}

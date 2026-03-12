@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WDD231 Web Frontend Development - Abdon</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development - TUYIZERE Niyogisubizo Abdon">
+    <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/tna.svg" alt="Logo" id="logo">
+        <span id="student-name">TUYIZERE N. Abdon</span>
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p>Hello, my name is TUYIZERE Niyogisubizo Abdon. I am a student at BYU-Idaho and I am passionate about web development. In my free time i play Piano</p>
+                
+            </div>
+
+        </section>
+        <section class="card">
+            <h2>Student Photo</h2>
+            <img id="me" src="images/my-picture.jpeg" alt="Picture of Abdon">
+            
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list"></div>
+            <p>Total Credits: <span id="total-credits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/tuyizere-abdon-25535123a/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/Abdon250" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/home" target="_blank">
+                        <i class="fa-brands fa-x"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p>&copy; <span id="currentyear"></span> TUYIZERE Niyogisubizo Abdon. All rights reserved. KIGALI, RWANDA</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+
+
+   
+</body>
+</html>
