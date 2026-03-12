@@ -26,10 +26,6 @@ header {
 }
 
 
-#logo {
-  width: 50px;
-  flex: 1;
-}
 
 
 #student-name {
@@ -41,7 +37,6 @@ header {
 
 .nav-bar {
   flex: 2;
-  display: flex;
   justify-content: flex-end;
   list-style: none;
   gap: 1rem;
@@ -163,6 +158,12 @@ color: white;
 transition: 0.3s;
 }
 
+.footer-nav svg{
+  width:24px;
+  height:24px;
+  fill:white;
+  transition:.3s;
+}
 .footer-nav i:hover{
 color: #C9CED6;
 transform: scale(1.2);
