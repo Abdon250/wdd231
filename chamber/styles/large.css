@@ -1,0 +1,29 @@
+@media (min-width:768px){
+
+    #menu { display:none; }
+
+    nav {
+        position: static;
+        transform: none;
+        height: auto;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .weather-events {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+}

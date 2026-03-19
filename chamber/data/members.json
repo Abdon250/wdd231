@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Tech Solutions",
+    "address": "Kigali",
+    "phone": "0788111111",
+    "website": "https://techsolutions.rw",
+    "image": "tech-sol.png",
+    "level" : 1
+  },
+  {
+    "name": "Green Farms",
+    "address": "Musanze",
+    "phone": "0788222222",
+    "website": "https://greenfarms.rw",
+    "image": "green-farms.jpeg",
+    "level" : 2
+  },
+  {
+    "name": "City Transport",
+    "address": "Kigali",
+    "phone": "0788333333",
+    "website": "https://citytransport.rw",
+    "image": "city-transport.jpeg",
+    "level" : 1
+  },
+  {
+    "name": "Smart Builders",
+    "address": "Huye",
+    "phone": "0788444444",
+    "website": "https://smartbuilders.rw",
+    "image": "smart-builders.jpeg",
+    "level" : 3
+  },
+  {
+    "name": "Fresh Market",
+    "address": "Rubavu",
+    "phone": "0788555555",
+    "website": "https://freshmarket.rw",
+    "image": "fresh-market.jpeg",
+    "level" : 1
+  },
+  {
+    "name": "Vision Media",
+    "address": "Kigali",
+    "phone": "0788666666",
+    "website": "https://visionmedia.rw",
+    "image": "vision-media.jpeg",
+    "level" : 2
+  },
+  {
+    "name": "Quick Finance",
+    "address": "Kigali",
+    "phone": "0788777777",
+    "website": "https://quickfinance.rw",
+    "image": "quik-finance.jpeg",
+    "level" : 3
+
+  }
+]

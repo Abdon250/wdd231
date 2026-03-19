@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory | Abdon</title>
+    <meta name="description" content="WDD 231 Web Frontend Development course homepage for TUYIZERE Niyogisubizo Abdon.">
+    <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="WDD231 Web Frontend Development - Abdon">
+    <meta property="og:description" content="Web Frontend Development course homepage by Abdon">
+    <meta property="og:image" content="images/my-picture.jpeg">
+    <meta property="og:url" content="https://abdon250.github.io/wdd231/">
+
+    <link rel="icon" href="/favicon1.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.svg" alt="">
+        <h1>Chamber</h1>
+    </div>
+    <button id="menu"><i class="fas fa-bars"></i></button>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="directory.html">Home</a></li>
+            <li><a href="#" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <button id="darkToggle"><i class="fas fa-moon"></i></button>
+</header>
+
+<main>
+
+<section class="hero">
+    <img src="images/hero.webp" alt="">
+    <div class="hero-text">
+        <h2>Connect with Local Businesses</h2>
+        <p>Discover trusted companies in your community</p>
+    </div>
+</section>
+
+<section class="weather-events">
+
+    <div class="card">
+        <h3><i class="fas fa-calendar"></i> Events</h3>
+        <ul id="events"></ul>
+    </div>
+
+    <div class="card">
+        <h3><i class="fas fa-cloud-sun"></i> Weather</h3>
+        <div id="weather"></div>
+    </div>
+
+    <div class="card">
+        <h3><i class="fas fa-temperature-high"></i> Forecast</h3>
+        <div id="forecast"></div>
+    </div>
+
+</section>
+
+<section class="directory">
+    <h2>Business Directory</h2>
+
+    <div class="view-buttons">
+        <button id="gridBtn"><i class="fas fa-th"></i> Grid</button>
+        <button id="listBtn"><i class="fas fa-list"></i> List</button>
+    </div>
+
+    <div id="members" class="grid"></div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-container">
+
+        <div>
+            <h3>Contact</h3>
+            <p><i class="fas fa-envelope"></i> info@chamber.com</p>
+            <p><i class="fas fa-phone"></i> +250 788 000 000</p>
+        </div>
+
+        <div class="center">
+            <h3>Follow Us</h3>
+            <div class="socials">
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Abdon</p>
+        <p>Last Modified: <span id="modified"></span></p>
+    </div>
+</footer>
+
+</body>
+</html>
