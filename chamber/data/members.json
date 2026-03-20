@@ -5,7 +5,7 @@
     "phone": "0788111111",
     "website": "https://techsolutions.rw",
     "image": "tech-sol.png",
-    "level" : 1
+    "level" : 3
   },
   {
     "name": "Green Farms",
@@ -21,7 +21,7 @@
     "phone": "0788333333",
     "website": "https://citytransport.rw",
     "image": "city-transport.jpeg",
-    "level" : 1
+    "level" : 3
   },
   {
     "name": "Smart Builders",

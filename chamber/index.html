@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+  
+
 </head>
 <body>
 
@@ -42,8 +44,8 @@
 
     <nav id="nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active">Directory</a></li>
+            <li><a class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
@@ -53,18 +55,39 @@
 
 <main>
 
+<section class="hero">
+    <img src="images/hero.webp" alt="Chamber Hero Image">
+    <div class="hero-text">
+        <h2>Connect with Local Businesses</h2>
+        <p>Discover trusted companies in your community</p>
+        <a href="join.html" class="cta-link">Join the Chamber Today</a>
 
+    </div>
+</section>
 
-    <section class="directory">
-        <h2>Business Directory</h2>
+<section class="weather-events">
 
-        <div class="view-buttons">
-            <button id="gridBtn"><i class="fas fa-th"></i> Grid</button>
-            <button id="listBtn"><i class="fas fa-list"></i> List</button>
-        </div>
+    <div class="card">
+        <h3><i class="fas fa-calendar"></i> Events</h3>
+        <ul id="events"></ul>
+    </div>
 
-        <div id="members" class="grid"></div>
-    </section>
+    <div class="card">
+        <h3><i class="fas fa-cloud-sun"></i> Weather</h3>
+        <div id="weather"></div>
+    </div>
+
+    <div class="card">
+        <h3><i class="fas fa-temperature-high"></i> Forecast</h3>
+        <div id="forecast"></div>
+    </div>
+
+</section>
+
+<section class="spotlights">
+    <h2>Member Spotlights</h2>
+    <div id="members" class="grid"></div>
+</section>
 
 </main>
 
