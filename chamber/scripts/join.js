@@ -1,49 +1,52 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+    
+
     const timestampInput = document.getElementById("timestamp");
     if (timestampInput) {
         timestampInput.value = new Date().toISOString();
     }
 
-    
-    const membershipLevels = [
-        { btnId: "np-link", modalId: "np-modal" },
-        { btnId: "bronze-link", modalId: "bronze-modal" },
-        { btnId: "silver-link", modalId: "silver-modal" },
-        { btnId: "gold-link", modalId: "gold-modal" }
+    const modalMapping = [
+        { btnId: "np-link", modalId: "np_modal" },
+        { btnId: "bronze-link", modalId: "bronze_modal" },
+        { btnId: "silver-link", modalId: "silver_modal" },
+        { btnId: "gold-link", modalId: "gold_modal" }
     ];
 
-    membershipLevels.forEach(level => {
-        const openButton = document.getElementById(level.btnId);
-        const modal = document.getElementById(level.modalId);
+    modalMapping.forEach(item => {
+        const openBtn = document.getElementById(item.btnId);
+        const modal = document.getElementById(item.modalId);
         
-        if (openButton && modal) {
-            openButton.addEventListener("click", () => {
+        if (openBtn && modal) {
+            openBtn.addEventListener("click", () => {
                 modal.showModal();
                 document.body.style.overflow = "hidden";
             });
 
-            const closeButton = modal.querySelector(".close-modal");
-            if (closeButton) {
-                closeButton.addEventListener("click", () => {
+            const closeBtn = modal.querySelector(".close-modal");
+            if (closeBtn) {
+                closeBtn.addEventListener("click", () => {
                     modal.close();
                     document.body.style.overflow = "auto";
                 });
             }
 
-            
             modal.addEventListener("click", (event) => {
-                const dialogDimensions = modal.getBoundingClientRect();
-                if (
-                    event.clientX < dialogDimensions.left ||
-                    event.clientX > dialogDimensions.right ||
-                    event.clientY < dialogDimensions.top ||
-                    event.clientY > dialogDimensions.bottom
-                ) {
+                const rect = modal.getBoundingClientRect();
+                const isInDialog = (
+                    event.clientX >= rect.left &&
+                    event.clientX <= rect.right &&
+                    event.clientY >= rect.top &&
+                    event.clientY <= rect.bottom
+                );
+                if (!isInDialog) {
                     modal.close();
                     document.body.style.overflow = "auto";
                 }
             });
         }
     });
+
+    console.log("Join script initialized: Timestamp set and Modal listeners active.");
 });

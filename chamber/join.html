@@ -35,10 +35,10 @@
 
 <header>
     <div class="logo">
-        <img src="images/logo.svg" alt="">
-        <h1>Chamber</h1>
+        <img src="images/logo.svg" alt="Chamber Logo">
+        <div class="logo-text">Chamber</div>
     </div>
-    <button id="menu"><i class="fas fa-bars"></i></button>
+    <button id="menu" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
 
     <nav id="nav">
         <ul>
@@ -48,11 +48,12 @@
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
-    <button id="darkToggle"><i class="fas fa-moon"></i></button>
+    <button id="darkToggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
 </header>
 
 <main class="join-main">
     <h1>Chamber Membership Application</h1>
+    
     <div class="join-grid">
         <section class="form-container">
             <form method="get" action="thankyou.html" class="join-form">
@@ -113,16 +114,16 @@
             <h2>Membership Benefits</h2>
             
             <div class="m-card animate-pop" id="np-card">
-            <h3>NP Membership</h3>
-            <p>For non-profit organizations.</p>
-            <button type="button" id="np-link">View Benefits</button>
-        </div>
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations.</p>
+                <button type="button" id="np-link">View Benefits</button>
+            </div>
 
-        <div class="m-card animate-pop" id="bronze-card">
-            <h3>Bronze Level</h3>
-            <p>Core networking & visibility.</p>
-            <button type="button" id="bronze-link">View Benefits</button>
-        </div>
+            <div class="m-card animate-pop" id="bronze-card">
+                <h3>Bronze Level</h3>
+                <p>Core networking & visibility.</p>
+                <button type="button" id="bronze-link">View Benefits</button>
+            </div>
 
             <div class="m-card animate-pop" id="silver-card">
                 <h3>Silver Level</h3>
@@ -146,7 +147,7 @@
                 <li>Community Event Postings</li>
                 <li>Monthly Newsletter Mention</li>
             </ul>
-            <button onclick="np_modal.close()">Close</button>
+            <button class="close-modal">Close</button>
         </div>
     </dialog>
 
@@ -158,7 +159,7 @@
                 <li>Business Directory Listing</li>
                 <li>Standard Event Access</li>
             </ul>
-            <button onclick="bronze_modal.close()">Close</button>
+            <button class="close-modal">Close</button>
         </div>
     </dialog>
 
@@ -171,7 +172,7 @@
                 <li>10% Event Discounts</li>
                 <li>Social Media Feature</li>
             </ul>
-            <button onclick="silver_modal.close()">Close</button>
+            <button class="close-modal">Close</button>
         </div>
     </dialog>
 
@@ -184,15 +185,13 @@
                 <li>25% Event Discounts</li>
                 <li>VIP Networking Dinners</li>
             </ul>
-            <button onclick="gold_modal.close()">Close</button>
+            <button class="close-modal">Close</button>
         </div>
     </dialog>
 </main>
 
-
 <footer>
     <div class="footer-container">
-
         <div>
             <h3>Contact</h3>
             <p><i class="fas fa-envelope"></i> info@chamber.com</p>
@@ -202,13 +201,12 @@
         <div class="center">
             <h3>Follow Us</h3>
             <div class="socials">
-                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
             </div>
         </div>
-
     </div>
 
     <div class="footer-bottom">
