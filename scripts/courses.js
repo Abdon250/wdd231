@@ -122,3 +122,29 @@ document.getElementById("cse").addEventListener("click", () => {
     const cseCourses = courses.filter(course => course.subject === "CSE");
     displayCourses(cseCourses);
 });
+
+courseList.addEventListener("click", (event) => {
+    const courseText = event.target.textContent;
+    const [subject, number] = courseText.split(" ");
+    const course = courses.find(c => c.subject === subject && c.number.toString() === number);
+
+    if (course) {
+        const dialog = document.getElementById("course-details");
+        dialog.innerHTML = `
+            <h2>${course.subject} ${course.number} </h2>
+            <button id="close-dialog">❌</button>
+
+            <p><strong>${course.title}</strong> </p>
+            <p>${course.credits} credits</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p>${course.description}</p>
+            <p><strong>Technology:</strong> ${course.technology.join(", ")}</p>
+            
+        `;
+        dialog.showModal();
+
+        document.getElementById("close-dialog").addEventListener("click", () => {
+            dialog.close();   
+        });
+    }
+});                      

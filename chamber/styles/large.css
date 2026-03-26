@@ -29,5 +29,9 @@
     footer{
         height: 300px;
     }
+    .join-grid {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: start;
+    }
 
 }

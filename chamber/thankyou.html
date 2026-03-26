@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory | Abdon</title>
+    <meta name="description" content="Chamber Directory - Connect with local businesses in your community.">
+    <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Chamber Directory - Abdon">
+    <meta property="og:description" content="Chamber Directory - Connect with local businesses in your community and discover new opportunities.">
+    <meta property="og:image" content="https://abdon250.github.io/wdd231/chamber/og-image1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://abdon250.github.io/wdd231/">
+
+    <link rel="icon" href="/favicon1.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/result.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.svg" alt="">
+        <h1>Chamber</h1>
+    </div>
+    <button id="menu"><i class="fas fa-bars"></i></button>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <button id="darkToggle"><i class="fas fa-moon"></i></button>
+</header>
+
+<main class="thank-you-page">
+    <div class="card confirmation-card">
+        <h1><i class="fas fa-check-circle"></i> Application Received</h1>
+        <p>Thank you for joining the Chamber. We have received your application and will review it shortly.</p>
+        
+        <hr>
+        
+        <h3>Submitted Information:</h3>
+        <div id="results">
+            </div>
+
+        <a href="index.html" class="cta-button">Return Home</a>
+    </div>
+</main>
+
+
+<footer>
+    <div class="footer-container">
+
+        <div>
+            <h3>Contact</h3>
+            <p><i class="fas fa-envelope"></i> info@chamber.com</p>
+            <p><i class="fas fa-phone"></i> +250 788 000 000</p>
+        </div>
+
+        <div class="center">
+            <h3>Follow Us</h3>
+            <div class="socials">
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Abdon</p>
+        <p>Last Modified: <span id="modified"></span></p>
+    </div>
+</footer>
+
+</body>
+</html>

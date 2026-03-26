@@ -139,6 +139,7 @@ nav a.active {
     grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
     gap: 1rem;
     padding: 1rem;
+
 }
 
 
@@ -313,4 +314,170 @@ body.dark a {
 #menu {
     position: relative;
     z-index: 1001;
+}
+
+
+.join-main {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+/* Form Styling */
+.join-form {
+    background-color: var(--card);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px #0000001a;
+    border-top: 5px solid var(--primary);
+}
+
+.join-form h2 {
+    margin-top: 0;
+    color: var(--primary);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.join-form label {
+    display: block;
+    margin: 1.2rem 0;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+.join-form input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 5px #0c677e4d;
+}
+
+/* Submit Button */
+.join-form input[type="submit"] {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: #084d5e;
+}
+
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.m-card {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px #0000001a;
+    border-left: 8px solid #ccc;
+    opacity: 0; 
+}
+
+
+#np-card { border-left-color: #7f8c8d; }
+#bronze-card { border-left-color: #cd7f32; }
+#silver-card { border-left-color: #c0c0c0; }
+#gold-card { border-left-color: #ffd700; }
+
+.m-card h3 {
+    margin: 0 0 1rem 0;
+}
+
+.m-card button {
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.m-card button:hover {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-pop {
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+
+.m-card:nth-child(1) { animation-delay: 0.2s; }
+.m-card:nth-child(2) { animation-delay: 0.4s; }
+.m-card:nth-child(3) { animation-delay: 0.6s; }
+.m-card:nth-child(4) { animation-delay: 0.8s; }
+
+
+/* Thank You Page Styling */
+.confirmation-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: left;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item strong {
+    color: var(--primary);
+}
+
+.thank-you-page h1 {
+    color: #2e7d32; 
+    text-align: center;
+}
+
+.thank-you-page h1 i {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
