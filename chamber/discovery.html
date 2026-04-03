@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory | Abdon</title>
-    <meta name="description" content="Chamber Directory - Connect with local businesses in your community.">
+    <title>Chamber Discovery | Abdon</title>
+    <meta name="description" content="Chamber Discovery - Explore the best of Rwanda.">
     <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="Chamber Directory - Abdon">
-    <meta property="og:description" content="Chamber Directory - Connect with local businesses in your community and discover new opportunities.">
+    <meta property="og:title" content="Chamber Discovery - Abdon">
+    <meta property="og:description" content="Chamber Discovery - Explore the best of Rwanda.">
     <meta property="og:image" content="https://abdon250.github.io/wdd231/chamber/og-image1.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -25,11 +25,12 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discovery.js" type="module"></script>
 </head>
 <body>
 
@@ -43,29 +44,30 @@
     <nav id="nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a class="active">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discovery.html">Discover</a></li>
+            <li><a class="active">Discover</a></li>
         </ul>
     </nav>
     <button id="darkToggle"><i class="fas fa-moon"></i></button>
 </header>
 
-<main>
+<main class="discover-main">
+    <h1>Discover Rwanda</h1>
+    
+    <div id="visitor-message" class="message-box"></div>
 
-
-
-    <section class="directory">
-        <h2>Business Directory</h2>
-
-        <div class="view-buttons">
-            <button id="gridBtn"><i class="fas fa-th"></i> Grid</button>
-            <button id="listBtn"><i class="fas fa-list"></i> List</button>
+    <div class="discover-grid" id="discover-container">
         </div>
 
-        <div id="members" class="grid"></div>
-    </section>
-
+    <dialog id="discover-modal">
+        <div class="modal-box">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <address id="modal-address"></address>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
 </main>
 
 <footer>

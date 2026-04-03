@@ -1,0 +1,18 @@
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "card0 card1" "card2 card3"
+            "card4 card5" "card6 card7";
+    }
+
+   .interest-card figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+        will-change: transform; 
+    }
+
+    .interest-card figure img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}

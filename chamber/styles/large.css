@@ -35,3 +35,11 @@
     }
 
 }
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "card0 card1 card2 card3"
+            "card4 card5 card6 card7";
+    }
+}
