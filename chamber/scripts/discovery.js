@@ -1,4 +1,3 @@
-
 import { interests } from '../data/discovery.mjs';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -6,8 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const messageBox = document.getElementById("visitor-message");
     const modal = document.getElementById("discover-modal");
 
-    
-    function setVisitMessage() {
+    function handleVisitMessage() {
+        if (!messageBox) return;
+
         const msToDays = 86400000; 
         const lastVisit = localStorage.getItem("lastVisitDate");
         const now = Date.now();
@@ -25,62 +25,63 @@ document.addEventListener("DOMContentLoaded", () => {
                 messageBox.textContent = `You last visited ${daysSince} ${dayWord} ago.`;
             }
         }
-        
         localStorage.setItem("lastVisitDate", now);
     }
 
-    function displayInterests() {
+    function renderCards() {
         if (!container) return;
 
-        container.innerHTML = interests.map((item, index) => `
+        const displayData = interests.slice(0, 8);
+
+        container.innerHTML = displayData.map((item, index) => `
             <section class="interest-card card-${index}">
                 <h2>${item.name}</h2>
                 <figure>
                     <img src="${item.image}" alt="${item.name}" 
-                         loading="lazy" width="300" height="200">
+                         loading="lazy" width="400" height="250">
                 </figure>
                 <address>${item.address}</address>
-                <p>${item.description.substring(0, 80)}...</p>
+                <p>${item.description.substring(0, 90)}...</p>
                 <button class="learn-more-btn" data-index="${index}">Learn More</button>
             </section>
         `).join('');
     }
 
- 
-    if (container) {
+    function initModal() {
+        if (!container || !modal) return;
+
         container.addEventListener("click", (event) => {
             if (event.target.classList.contains("learn-more-btn")) {
                 const index = event.target.getAttribute("data-index");
                 const data = interests[index];
 
-              
                 document.getElementById("modal-title").textContent = data.name;
                 document.getElementById("modal-desc").textContent = data.description;
                 document.getElementById("modal-address").textContent = data.address;
 
-                
-                if (modal) {
-                    modal.showModal();
-                    document.body.style.overflow = "hidden"; 
-                }
+                modal.showModal();
+                document.body.style.overflow = "hidden"; 
             }
         });
-    }
 
-    if (modal) {
         const closeBtn = modal.querySelector(".close-modal");
-        closeBtn.addEventListener("click", () => {
-            modal.close();
-            document.body.style.overflow = "auto";
-        });
+        if (closeBtn) {
+            closeBtn.onclick = () => {
+                modal.close();
+                document.body.style.overflow = "auto";
+            };
+        }
 
-        modal.addEventListener("click", (event) => {
-            if (event.target === modal) {
+    
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
                 modal.close();
                 document.body.style.overflow = "auto";
             }
         });
     }
-    setVisitMessage();
-    displayInterests();
+
+    handleVisitMessage();
+    renderCards();
+    initModal();
 });

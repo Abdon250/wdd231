@@ -1,6 +1,8 @@
-@media (min-width:768px){
 
-    #menu { display:none; }
+@media (min-width: 1025px) {
+    #menu { 
+        display: none; 
+    }
 
     nav {
         position: static;
@@ -8,6 +10,7 @@
         height: auto;
         width: auto;
         background-color: transparent;
+        padding: 0;
     }
 
     nav ul {
@@ -15,31 +18,38 @@
         gap: 1rem;
     }
 
-    .weather-events {
-    grid-template-columns: repeat(3, 1fr);
-    }
-
-
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    }
-    footer{
-        height: 300px;
-    }
-    .join-grid {
-        grid-template-columns: 1.5fr 1fr;
-        align-items: start;
-    }
-
-}
-@media (min-width: 1025px) {
+   
     .discover-grid {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
-            "card0 card1 card2 card3"
-            "card4 card5 card6 card7";
+            "area0 area1 area2 area3"
+            "area4 area5 area6 area7";
+    }
+
+    .card-0 { grid-area: area0; }
+    .card-1 { grid-area: area1; }
+    .card-2 { grid-area: area2; }
+    .card-3 { grid-area: area3; }
+    .card-4 { grid-area: area4; }
+    .card-5 { grid-area: area5; }
+    .card-6 { grid-area: area6; }
+    .card-7 { grid-area: area7; }
+
+   
+    .interest-card img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+    
+    .interest-card:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+
+    #members section:hover { 
+        transform: translateY(-5px); 
+    }
+
+    .join-grid {
+        grid-template-columns: 1.5fr 1fr;
     }
 }
