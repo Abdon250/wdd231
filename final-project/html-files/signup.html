@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechStore | Sign Up</title>
+
+<link rel="stylesheet" href="styles/style.css">
+
+<script src="scripts/signup.js" defer></script>
+<script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <a href="index.html" id="logo">TechStore</a>
+
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h2>Create Account</h2>
+
+    <form id="signup-form">
+        <input id="username" placeholder="Username">
+        <p id="username-error"></p>
+
+        <input id="email" placeholder="Email">
+        <p id="email-error"></p>
+
+        <input id="phone" placeholder="Phone">
+        <p id="phone-error"></p>
+
+        <input id="password" type="password" placeholder="Password">
+        <p id="password-error"></p>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> TechStore</p>
+</footer>
+
+</body>
+</html>

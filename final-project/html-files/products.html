@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore | Products</title>
+
+    <meta name="description" content="Browse all electronics products including phones, laptops and more.">
+    <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
+
+    <meta property="og:title" content="TechStore Products">
+    <meta property="og:description" content="Find the best electronics deals at TechStore.">
+    <meta property="og:image" content="/images/og-image.jpg">
+
+    <link rel="icon" href="/favicon1.ico">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/products.js" type="module" defer></script>
+</head>
+
+<body>
+<header>
+    <div class="header-content">
+        <a id="logo" href="index.html">TechStore</a>
+
+        <form id="search-form" class="search">
+            <input id="search-input" type="text" placeholder="Search products...">
+            <button type="submit">🔍</button>
+        </form>
+
+        <nav>
+            <a href="#" id="menu-toggle">☰</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h2>Products</h2>
+    <div id="product-list"></div>
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> TechStore. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechStore | Search</title>
+
+<link rel="stylesheet" href="styles/style.css">
+
+<script src="scripts/data.js" defer></script>
+<script src="scripts/search.js" defer></script>
+<script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <a href="index.html" id="logo">TechStore</a>
+
+        <form id="search-form">
+            <input id="search-input" placeholder="Search products...">
+            <button>Search</button>
+        </form>
+
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h2>Search Results</h2>
+    <div id="product-list"></div>
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> TechStore</p>
+</footer>
+
+</body>
+</html>

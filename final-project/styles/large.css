@@ -1,0 +1,27 @@
+@media (min-width: 1025px) {
+
+.category-list {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#product-list {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* HOVER EFFECTS (PROFESSIONAL TOUCH) */
+.category-item {
+    transition: all 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* CART CENTER */
+.cart {
+    max-width: 900px;
+    margin: auto;
+}
+
+}

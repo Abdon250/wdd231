@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore | Login</title>
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/login.js" type="module" defer></script>
+</head>
+
+<body>
+<header>
+    <div class="header-content">
+        <a id="logo" href="index.html">TechStore</a>
+
+        <nav>
+            <a href="#" id="menu-toggle">☰</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <form id="login-form">
+        <input id="username" placeholder="Username">
+        <span id="username-error"></span>
+
+        <input id="password" type="password" placeholder="Password">
+        <span id="password-error"></span>
+
+        <button type="submit">Login</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> TechStore. All rights reserved.</p>
+</footer>
+</body>
+</html>

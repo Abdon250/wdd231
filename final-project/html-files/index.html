@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore | Home</title>
+
+    <meta name="description" content="TechStore - Buy smartphones, laptops, tablets and accessories at the best prices.">
+    <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="TechStore - Modern Electronics Shop">
+    <meta property="og:description" content="Shop the latest phones, laptops, tablets and accessories at TechStore.">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://techstore.example.com">
+
+    <link rel="icon" href="/favicon1.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/small.css">
+    <link rel="stylesheet" href="../styles/medium.css">
+    <link rel="stylesheet" href="../styles/large.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="../scripts/main.mjs" type="module"></script>
+    
+</head>
+
+<body>
+<header>
+    <div class="header-content">
+        <a id="logo" href="index.html">TechStore</a>
+
+        <form id="search-form" class="search">
+            <input id="search-input" type="text" placeholder="Search products...">
+            <button type="submit">🔍</button>
+        </form>
+
+        <nav>
+            <a href="#" id="menu-toggle">☰</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section>
+        <img class="banner-image" src="images/banner.jpg" alt="TechStore banner">
+    </section>
+
+    <h2>Shop Categories</h2>
+    <div id="home-category-list" class="category-list"></div>
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> TechStore. All rights reserved.</p>
+</footer>
+</body>
+</html>

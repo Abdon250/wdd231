@@ -1,0 +1,49 @@
+@media (min-width: 600px) {
+
+.header-content {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* NAV INLINE */
+.nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    gap: 10px;
+}
+
+/* HIDE MENU BUTTON */
+#menu-toggle {
+    display: none;
+}
+
+/* SEARCH BACK TO HEADER */
+.search {
+    position: static;
+    transform: none;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+}
+
+.search input {
+    border: 1px solid #ccc;
+}
+
+/* GRID UPGRADE */
+.category-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#product-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* IMAGES BIGGER */
+.category-item img {
+    height: 150px;
+}
+
+}
