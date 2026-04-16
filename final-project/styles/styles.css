@@ -20,6 +20,7 @@ body{
 
 header{  
     background-color: #006EB6;
+    color: #ffffff;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -267,7 +268,7 @@ footer{
     text-align: center;
     padding: 20px;
     background-color: #006EB6;
-    color: #e3e3e3;
+    color: #ffffff;
     margin-top: auto;
     border-radius: 10px;
 }
