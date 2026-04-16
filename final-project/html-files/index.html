@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Electronics Store</title>
 
-    <meta name="description" content="Responsive e-commerce platform with dynamic products, localized prices, and shopping cart.">
+    <title>Mobile Electronics Store | Phones, Laptops & Accessories</title>
+
+    <meta name="description" content="Shop the latest smartphones, laptops, and accessories at MES. Affordable prices, fast browsing, and a smooth mobile shopping experience.">
     <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
 
-    <meta property="og:title" content="Mobile Electronics Store">
-    <meta property="og:description" content="Shop the latest mobile electronics with great prices and fast shopping experience.">
+    <link rel="icon" href="../icons/favicon.png" type="image/png">
+
+    <meta property="og:title" content="Mobile Electronics Store | Phones, Laptops & Accessories">
+    <meta property="og:description" content="Shop smartphones, laptops, and accessories at great prices with a fast, mobile-friendly experience.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mes.com">
     <meta property="og:image" content="https://mes.com/images/preview.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mobile Electronics Store">
-    <meta name="twitter:description" content="Shop the latest mobile electronics with great prices and fast shopping experience.">
+    <meta name="twitter:title" content="Mobile Electronics Store | Phones, Laptops & Accessories">
+    <meta name="twitter:description" content="Shop smartphones, laptops, and accessories at great prices with a fast mobile experience.">
     <meta name="twitter:image" content="https://mes.com/images/preview.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/styles.css">
@@ -32,12 +36,14 @@
 </head>
 
 <body>
+
 <header id="header">
     <div class="header-content">
         <a id="logo" href="./index.html">MES.</a>
 
         <div class="search">
             <form id="search-form" role="search">
+                <label for="search-input" class="sr-only">Search products</label>
                 <input type="text" id="search-input" placeholder="Search products..." aria-label="Search products">
                 <button type="submit">🔍</button>
             </form>
@@ -46,7 +52,7 @@
         <nav aria-label="Main navigation">
             <a id="menu-toggle" href="#" aria-label="Open menu">☰</a>
             <ul class="nav-links">
-                <li><a class="active">Home</a></li>
+                <li><a class="active" href="./index.html">Home</a></li>
                 <li><a href="./categories.html">Categories</a></li>
                 <li><a href="./products.html">Products</a></li>
             </ul>
@@ -75,6 +81,8 @@
 </header>
 
 <main>
+    <h1 class="sr-only">Mobile Electronics Store</h1>
+
     <div id="product-list"></div>
 
     <h2>Shop by Category</h2>
@@ -86,10 +94,7 @@
 
         <div class="footer-section">
             <h3>About Us</h3>
-            <p>
-                MES is a modern electronics store offering quality devices,
-                competitive prices, and a smooth shopping experience.
-            </p>
+            <p>MES is a modern electronics store offering quality devices, competitive prices, and a smooth shopping experience.</p>
         </div>
 
         <div class="footer-section">
