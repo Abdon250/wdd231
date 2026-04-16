@@ -1,56 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore | Products</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile Electronics Store | Products</title>
+        <meta name="description" content="Responsive e-commerce platform with dynamic products, localized prices, and shopping cart.">
+        <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
 
-    <meta name="description" content="Browse all electronics products including phones, laptops and more.">
-    <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/large.css">
 
-    <meta property="og:title" content="TechStore Products">
-    <meta property="og:description" content="Find the best electronics deals at TechStore.">
-    <meta property="og:image" content="/images/og-image.jpg">
 
-    <link rel="icon" href="/favicon1.ico">
+        <script type="module" src="../scripts/cart.js"></script>
+        <script src="../scripts/script.js" defer></script>
+        <script type="module" src="../scripts/products.js"></script> 
+        <script src="../scripts/search2.js" defer></script>
+        
+        
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+        
+    </head>
+    <body>
+        <header id="header">
+            <div class="header-content">
+                <a id="logo" href="./index.html">MES.</a>
+                <div class="search">
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Search products...">
+                        <button type="submit">🔍</button>
+                    </form>
+                </div>
+                <nav>
+                    <a id="menu-toggle" href="#">☰</a>
+                    <ul class="nav-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./categories.html">Categories</a></li>
+                        <li><a class="active">Products</a></li>
+                    </ul>
+                </nav>
 
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/products.js" type="module" defer></script>
-</head>
+                
+                    <nav class="nav-icons">
+                        <a href="./cart.html" aria-label="cart"><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <circle cx="9" cy="21" r="1"></circle>
+                          <circle cx="20" cy="21" r="1"></circle>
+                          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        </a>
+                    
+                        <a href="./login.html"><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
 
-<body>
-<header>
-    <div class="header-content">
-        <a id="logo" href="index.html">TechStore</a>
+                            </a>
+                    </nav>
 
-        <form id="search-form" class="search">
-            <input id="search-input" type="text" placeholder="Search products...">
-            <button type="submit">🔍</button>
-        </form>
+            
 
-        <nav>
-            <a href="#" id="menu-toggle">☰</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+            </div>
+        </header>
 
-<main>
-    <h2>Products</h2>
-    <div id="product-list"></div>
-</main>
+    <main>
+        <h2 class="products-title">Products</h2>
+        <div id="product-scroll-container">
+            <div id="product-list" class="scrollable">
+               <!-- Product items go here -->
+            </div>
+        </div>
+        <dialog id="product-dialog">
 
-<footer>
-    <p>&copy; <span id="current-year"></span> TechStore. All rights reserved.</p>
-</footer>
+            <h3 id="modal-title"></h3>
+
+            <p id="modal-desc"></p>
+
+            <p id="modal-price"></p>
+
+            <p id="modal-rating"></p>
+
+            <p id="modal-stock"></p>
+
+            <ul id="modal-specs"></ul>
+
+            <button id="close-dialog">Close</button>
+        </dialog>
+    </main>
+
+
+    <footer id="footer">
+            <div class="footer-container">
+
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>
+                        MES is a modern electronics store offering quality devices,
+                        competitive prices, and a smooth shopping experience.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@mes.com</p>
+                    <p>Phone: +250 7XX XXX XXX</p>
+                    <p>Location: Kigali, Rwanda</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="./index.html">Home</a>
+                    <a href="./categories.html">Categories</a>
+                    <a href="./cart.html">Cart</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> TUYIZERE N. Abdon</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </footer>
+
+    
 </body>
 </html>

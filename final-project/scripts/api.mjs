@@ -1,14 +1,21 @@
-const API_URL =
-  "https://raw.githubusercontent.com/Abdon250/Electronics-API/main/products.json";
+export async function fetchAPI() {
+    try {
+        const res = await fetch('../data/data.json');
 
-let cache = null;
+        if (!res.ok) {
+            throw new Error(`HTTP error: ${res.status}`);
+        }
 
-export async function getData() {
-  if (cache) return cache;
+        const data = await res.json();
 
-  const res = await fetch(API_URL);
-  if (!res.ok) throw new Error("API failed to load");
+        return data;
 
-  cache = await res.json();
-  return cache;
+    } catch (err) {
+        console.error("API Fetch Error:", err);
+
+        return {
+            categoryBrands: {},
+            products: {}
+        };
+    }
 }

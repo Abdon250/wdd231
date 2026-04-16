@@ -1,0 +1,489 @@
+{
+  "categoryBrands": {
+    "phones": [
+      { "name": "Apple", "image": "../images/phones/phones.jpeg" },
+      { "name": "Samsung", "image": "../images/phones/samsung.jpg" },
+      { "name": "Google", "image": "../images/phones/google pixel.jpg" },
+      { "name": "OnePlus", "image": "../images/phones/oneplus.jpg" },
+      { "name": "Nokia", "image": "../images/phones/nokia.jpeg" },
+      { "name": "Sony", "image": "../images/phones/sonny.jpg" },
+      { "name": "Tecno", "image": "../images/phones/tecno.jpg" }
+    ],
+    "tablets": [
+      { "name": "iPad", "image": "../images/tablet.jpg" },
+      { "name": "Samsung Galaxy Tab", "image": "../images/tablets/samsung tab.jpeg" },
+      { "name": "Amazon Fire", "image": "../images/tablets/amazon_fire.jpeg" }
+    ],
+    "laptops": [
+      { "name": "Dell", "image": "../images/laptops/dell.jpg" },
+      { "name": "HP", "image": "../images/laptops/hp.jpg" },
+      { "name": "Lenovo", "image": "../images/laptops/lenovo.png" },
+      { "name": "Apple", "image": "../images/laptops/macbook.jpg" }
+    ],
+    "accessories": [
+      { "name": "Headphones", "image": "../images/accessories/head_phones.jpeg" },
+      { "name": "Chargers", "image": "../images/accessories/charger.jpeg" },
+      { "name": "Cases", "image": "../images/accessories/cases.jpeg" }
+    ]
+  },
+
+  "products": {
+    "phones": {
+      "Apple": [
+        {
+          "name": "iPhone 11",
+          "images": [
+            "../images/phones/iphone 11.jpg",
+            "../images/phones/iphone 11.jpg"
+          ],
+          "price": 500,
+          "description": "iPhone 11 64GB, Black",
+          "fullDescription": "The iPhone 11 delivers smooth performance with A13 Bionic chip, excellent battery life, and a powerful dual-camera system designed for everyday photography and video.",
+          "specs": [
+            "64GB Storage",
+            "A13 Bionic Chip",
+            "Dual 12MP Camera",
+            "Face ID",
+            "4K Video Recording"
+          ],
+          "rating": 4.6,
+          "stock": 12
+        },
+        {
+          "name": "iPhone 12",
+          "images": [
+            "../images/phones/iphone 12.jpg",
+            "../images/phones/iphone 12.jpg"
+          ],
+          "price": 700,
+          "description": "iPhone 12 128GB, White",
+          "fullDescription": "iPhone 12 introduces 5G connectivity, OLED Super Retina XDR display, and the fast A14 Bionic chip for powerful performance.",
+          "specs": [
+            "128GB Storage",
+            "A14 Bionic Chip",
+            "5G Support",
+            "OLED Display",
+            "Ceramic Shield"
+          ],
+          "rating": 4.7,
+          "stock": 8
+        },
+        {
+          "name": "iPhone 13",
+          "images": [
+            "../images/phones/iphone 12.jpg",
+            "../images/phones/iphone 12.jpg"
+          ],
+          "price": 800,
+          "description": "iPhone 13 128GB, Blue",
+          "fullDescription": "iPhone 13 improves battery life, camera performance, and introduces Cinematic Mode for professional video recording.",
+          "specs": [
+            "128GB Storage",
+            "A15 Bionic Chip",
+            "Cinematic Mode",
+            "Dual Camera System",
+            "Super Retina XDR"
+          ],
+          "rating": 4.8,
+          "stock": 5
+        }
+      ],
+
+      "Samsung": [
+        {
+          "name": "Galaxy S21",
+          "images": [
+            "../images/phones/samsung.jpg",
+            "../images/phones/samsung.jpg"
+          ],
+          "price": 600,
+          "description": "Samsung Galaxy S21 128GB",
+          "fullDescription": "Samsung Galaxy S21 delivers high performance with a Dynamic AMOLED display and professional-grade camera system.",
+          "specs": [
+            "128GB Storage",
+            "Exynos/Snapdragon Chip",
+            "120Hz Display",
+            "Triple Camera",
+            "5G Support"
+          ],
+          "rating": 4.5,
+          "stock": 10
+        },
+        {
+          "name": "Galaxy S22",
+          "images": [
+            "../images/phones/samsung.jpg",
+            "../images/phones/samsung.jpg"
+          ],
+          "price": 800,
+          "description": "Samsung Galaxy S22 256GB",
+          "fullDescription": "Galaxy S22 offers flagship performance, enhanced night photography, and smooth 120Hz display experience.",
+          "specs": [
+            "256GB Storage",
+            "Snapdragon 8 Gen",
+            "120Hz AMOLED",
+            "Nightography Camera",
+            "5G"
+          ],
+          "rating": 4.7,
+          "stock": 6
+        }
+      ],
+
+      "Google": [
+        {
+          "name": "Pixel 6",
+          "images": [
+            "../images/phones/google pixel.jpg",
+            "../images/phones/google pixel.jpg"
+          ],
+          "price": 650,
+          "description": "Google Pixel 6 128GB",
+          "fullDescription": "Pixel 6 delivers pure Android experience with Google Tensor chip and advanced AI camera features.",
+          "specs": [
+            "128GB Storage",
+            "Google Tensor Chip",
+            "AI Camera",
+            "OLED Display",
+            "5G"
+          ],
+          "rating": 4.6,
+          "stock": 7
+        },
+        {
+          "name": "Pixel 7",
+          "images": [
+            "../images/phones/google pixel.jpg",
+            "../images/phones/google pixel.jpg"
+          ],
+          "price": 750,
+          "description": "Google Pixel 7 256GB",
+          "fullDescription": "Pixel 7 improves performance, AI photography, and delivers smooth Android experience.",
+          "specs": [
+            "256GB Storage",
+            "Google Tensor G2",
+            "AI Camera",
+            "Face Unlock",
+            "5G"
+          ],
+          "rating": 4.7,
+          "stock": 4
+        }
+      ],
+
+      "OnePlus": [
+        {
+          "name": "OnePlus 9",
+          "images": [
+            "../images/phones/oneplus.jpg",
+            "../images/phones/oneplus.jpg"
+          ],
+          "price": 550,
+          "description": "OnePlus 9 128GB",
+          "fullDescription": "OnePlus 9 delivers fast performance with Snapdragon chipset and smooth OxygenOS experience.",
+          "specs": [
+            "128GB Storage",
+            "Snapdragon 888",
+            "120Hz Display",
+            "Hasselblad Camera",
+            "5G"
+          ],
+          "rating": 4.5,
+          "stock": 9
+        }
+      ],
+
+      "Nokia": [
+        {
+          "name": "Nokia 8.3",
+          "images": [
+            "../images/phones/nokia.jpeg",
+            "../images/phones/nokia.jpeg"
+          ],
+          "price": 400,
+          "description": "Nokia 8.3 128GB",
+          "fullDescription": "Nokia 8.3 offers reliable performance with clean Android experience and strong build quality.",
+          "specs": [
+            "128GB Storage",
+            "Pure Android",
+            "Quad Camera",
+            "5G",
+            "Durable Build"
+          ],
+          "rating": 4.2,
+          "stock": 15
+        }
+      ],
+
+      "Sony": [
+        {
+          "name": "Xperia 1",
+          "images": [
+            "../images/phones/sonny.jpg",
+            "../images/phones/sonny.jpg"
+          ],
+          "price": 700,
+          "description": "Sony Xperia 1 128GB",
+          "fullDescription": "Sony Xperia 1 focuses on professional video and cinematic display quality.",
+          "specs": [
+            "128GB Storage",
+            "4K OLED Display",
+            "Triple Camera",
+            "Cinema Pro Mode",
+            "5G"
+          ],
+          "rating": 4.4,
+          "stock": 6
+        }
+      ],
+
+      "Tecno": [
+        {
+          "name": "Tecno Camon 19",
+          "images": [
+            "../images/phones/tecno.jpg",
+            "../images/phones/tecno.jpg"
+          ],
+          "price": 300,
+          "description": "Tecno Camon 19 128GB",
+          "fullDescription": "Tecno Camon 19 is a budget-friendly smartphone with strong camera performance and long battery life.",
+          "specs": [
+            "128GB Storage",
+            "Helio G85 Chip",
+            "64MP Camera",
+            "5000mAh Battery",
+            "FHD+ Display"
+          ],
+          "rating": 4.1,
+          "stock": 20
+        }
+      ]
+    },
+
+    "tablets": {
+      "iPad": [
+        {
+          "name": "iPad 9",
+          "images": [
+            "../images/tablets/ipad.jpeg",
+            "../images/tablets/ipad.jpeg"
+          ],
+          "price": 500,
+          "description": "iPad 9 64GB",
+          "fullDescription": "iPad 9 is perfect for study, entertainment, and productivity with smooth iPadOS experience.",
+          "specs": [
+            "64GB Storage",
+            "A13 Chip",
+            "10.2-inch Display",
+            "Apple Pencil Support",
+            "iPadOS"
+          ],
+          "rating": 4.6,
+          "stock": 10
+        }
+      ],
+
+      "Samsung": [
+        {
+          "name": "Galaxy Tab S7",
+          "images": [
+            "../images/tablets/samsung tab.jpeg",
+            "../images/tablets/samsung tab.jpeg"
+          ],
+          "price": 600,
+          "description": "Samsung Galaxy Tab S7 128GB",
+          "fullDescription": "Galaxy Tab S7 offers powerful multitasking with DeX mode and high refresh rate display.",
+          "specs": [
+            "128GB Storage",
+            "Snapdragon Chip",
+            "120Hz Display",
+            "S Pen Included",
+            "DeX Mode"
+          ],
+          "rating": 4.7,
+          "stock": 7
+        }
+      ],
+
+      "Amazon": [
+        {
+          "name": "Fire HD 10",
+          "images": [
+            "../images/tablets/amazon_fire.jpeg",
+            "../images/tablets/amazon_fire.jpeg"
+          ],
+          "price": 200,
+          "description": "Amazon Fire HD 10 64GB",
+          "fullDescription": "Fire HD 10 is an affordable tablet for streaming, reading, and basic tasks.",
+          "specs": [
+            "64GB Storage",
+            "10.1-inch Display",
+            "Alexa Built-in",
+            "Expandable Storage",
+            "Long Battery Life"
+          ],
+          "rating": 4.0,
+          "stock": 25
+        }
+      ]
+    },
+
+    "laptops": {
+      "Dell": [
+        {
+          "name": "Dell XPS 13",
+          "images": [
+            "../images/laptops/dell.jpg",
+            "../images/laptops/dell.jpg"
+          ],
+          "price": 1000,
+          "description": "Dell XPS 13 16GB RAM",
+          "fullDescription": "Dell XPS 13 is a premium ultrabook designed for performance, portability, and productivity.",
+          "specs": [
+            "16GB RAM",
+            "Intel i7",
+            "13-inch Display",
+            "SSD Storage",
+            "Ultra Thin Design"
+          ],
+          "rating": 4.8,
+          "stock": 5
+        }
+      ],
+
+      "HP": [
+        {
+          "name": "HP Spectre",
+          "images": [
+            "../images/laptops/hp.jpg",
+            "../images/laptops/hp.jpg"
+          ],
+          "price": 950,
+          "description": "HP Spectre x360 16GB RAM",
+          "fullDescription": "HP Spectre is a convertible laptop with premium design and strong performance.",
+          "specs": [
+            "16GB RAM",
+            "Intel i7",
+            "Touchscreen",
+            "Convertible Design",
+            "SSD Storage"
+          ],
+          "rating": 4.7,
+          "stock": 6
+        }
+      ],
+
+      "Lenovo": [
+        {
+          "name": "Lenovo ThinkPad",
+          "images": [
+            "../images/laptops/lenovo.png",
+            "../images/laptops/lenovo.png"
+          ],
+          "price": 900,
+          "description": "Lenovo ThinkPad 16GB RAM",
+          "fullDescription": "ThinkPad is known for durability and excellent keyboard experience for professionals.",
+          "specs": [
+            "16GB RAM",
+            "Intel i7",
+            "Business Grade",
+            "Durable Build",
+            "SSD Storage"
+          ],
+          "rating": 4.6,
+          "stock": 8
+        }
+      ],
+
+      "Apple": [
+        {
+          "name": "MacBook Pro",
+          "images": [
+            "../images/laptops/macbook.jpg",
+            "../images/laptops/macbook.jpg"
+          ],
+          "price": 1500,
+          "description": "MacBook Pro 16GB RAM",
+          "fullDescription": "MacBook Pro delivers extreme performance for developers, creators, and professionals.",
+          "specs": [
+            "16GB RAM",
+            "M2 Chip",
+            "Retina Display",
+            "All-day Battery",
+            "macOS"
+          ],
+          "rating": 4.9,
+          "stock": 3
+        }
+      ]
+    },
+
+    "accessories": {
+      "Headphones": [
+        {
+          "name": "Sony WH-1000XM4",
+          "images": [
+            "../images/accessories/head_phones.jpeg",
+            "../images/accessories/head_phones.jpeg"
+          ],
+          "price": 300,
+          "description": "Noise Cancelling Headphones",
+          "fullDescription": "Industry-leading noise cancelling headphones with premium sound quality.",
+          "specs": [
+            "Noise Cancelling",
+            "Wireless",
+            "30h Battery",
+            "Bluetooth 5.0",
+            "Touch Controls"
+          ],
+          "rating": 4.8,
+          "stock": 10
+        }
+      ],
+
+      "Chargers": [
+        {
+          "name": "Anker Charger",
+          "images": [
+            "../images/accessories/charger.jpeg",
+            "../images/accessories/charger.jpeg"
+          ],
+          "price": 50,
+          "description": "Fast Charger",
+          "fullDescription": "Fast charging adapter compatible with most smartphones and tablets.",
+          "specs": [
+            "Fast Charging",
+            "USB-C",
+            "Compact Design",
+            "Universal Compatibility",
+            "Safe Charging"
+          ],
+          "rating": 4.5,
+          "stock": 30
+        }
+      ],
+
+      "Cases": [
+        {
+          "name": "iPhone Case",
+          "images": [
+            "../images/accessories/cases.jpeg",
+            "../images/accessories/cases.jpeg"
+          ],
+          "price": 30,
+          "description": "iPhone 12 Case",
+          "fullDescription": "Protective case designed for durability and style.",
+          "specs": [
+            "Shock Resistant",
+            "Slim Fit",
+            "Scratch Protection",
+            "Lightweight",
+            "iPhone Compatible"
+          ],
+          "rating": 4.3,
+          "stock": 40
+        }
+      ]
+    }
+  }
+}

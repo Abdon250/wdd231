@@ -1,49 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore | Cart</title>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mobile Electronics Store | Cart</title>
+            <meta name="description" content="Responsive e-commerce platform with dynamic products, localized prices, and shopping cart.">
+            <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
 
-    <meta name="description" content="View and manage your shopping cart.">
-    <meta name="author" content="Abdon">
+            <meta property="og:title" content="Mobile Electronics Store">
+            <meta property="og:description" content="Shop the latest mobile electronics with great prices and fast shopping experience.">
+            <meta property="og:type" content="website">
+            <meta property="og:url" content="https://mes.com">
+            <meta property="og:image" content="https://mes.com/images/preview.jpg">
 
-    <link rel="stylesheet" href="styles/small.css">
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Mobile Electronics Store">
+            <meta name="twitter:description" content="Shop the latest mobile electronics with great prices and fast shopping experience.">
+            <meta name="twitter:image" content="https://mes.com/images/preview.jpg">
 
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/cart.js" type="module" defer></script>
-</head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="../styles/styles.css">
+            <link rel="stylesheet" href="../styles/large.css">
 
-<body>
-<header>
-    <div class="header-content">
-        <a id="logo" href="index.html">TechStore</a>
+            <script src="../scripts/script.js" defer></script>
+            <script type="module" src="../scripts/cart.js"></script>
+            <script src="../scripts/search2.js" defer></script>
 
-        <nav>
-            <a href="#" id="menu-toggle">☰</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        
+        </head>
+    <body>
+        <header id="header">
+            <div class="header-content">
+                <a id="logo" href="./index.html">MES.</a>
+                <div class="search">
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Search products...">
+                        <button type="submit">🔍</button>
+                    </form>
+                </div>
+                <nav>
+                    <a id="menu-toggle" href="#">☰</a>
+                    <ul class="nav-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./categories.html">Categories</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                    </ul>
+                </nav>
+                    <nav>
+                        <a href="./login.html"><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
 
-<main>
-    <h2>Your Cart</h2>
+                            </a>
+                    </nav>
 
-    <div class="cart-items"></div>
+            
 
-    <p class="total-items"></p>
-    <p class="total-amount"></p>
+            </div>
+        </header>
+        <main>
+            
+            <div class="cart">
+                <h2>Your Shopping Cart</h2>
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically loaded here -->
+                </div>
+                <div class="empty-cart" style="display: none;">
+                    <a href="../html-files/products.html" class="continue-shopping-btn">Continue Shopping</a>
+                    <h1>Your Cart is Empty...</h1>
+                    <img src="../images/empty_cart.png" alt="Empty Cart" />
+                </div>
+                
+            </div>
+            <div class="total">
+                    <h3>Total Summary</h3>
+                    <p class="total-items">Total Items: </p>
+                    <p class="total-amount">Total Amount: </p>
+                    
+                    <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
 
-    <button class="checkout-btn">Checkout</button>
-</main>
+    
+            
+        </main>
+        <footer id="footer">
+            <div class="footer-container">
 
-<footer>
-    <p>&copy; <span id="current-year"></span> TechStore. All rights reserved.</p>
-</footer>
-</body>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>
+                        MES is a modern electronics store offering quality devices,
+                        competitive prices, and a smooth shopping experience.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@mes.com</p>
+                    <p>Phone: +250 7XX XXX XXX</p>
+                    <p>Location: Kigali, Rwanda</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="./index.html">Home</a>
+                    <a href="./categories.html">Categories</a>
+                    <a href="./products.html">Products</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> TUYIZERE N. Abdon</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </footer>
+        
+    </body>
+   
+   
 </html>

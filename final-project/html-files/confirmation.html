@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mobile Electronics Store | Signup</title>
+        <title>Mobile Electronics Store | Confirmation</title>
         <meta name="description" content="Responsive e-commerce platform with dynamic products, localized prices, and shopping cart.">
         <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
 
@@ -13,14 +13,16 @@
         <link rel="stylesheet" href="../styles/styles.css">
         <link rel="stylesheet" href="../styles/large.css">
 
-        <script src="../scripts/script.js" defer></script>
+       
+        <script type="module" src="../scripts/confirmation.js"></script>
         <script src="../scripts/search2.js" defer></script>
-        <script src="../scripts/signup.js" defer></script>
+        <script type="module" src="../scripts/search.js"></script>
+        <script src="../scripts/script.js" defer></script>
+        
 
         
     </head>
     <body>
-        <div id="search-results"></div>
         <header id="header">
             <div class="header-content">
                 <a id="logo" href="./index.html">MES.</a>
@@ -80,42 +82,25 @@
 
             </div>
         </header>
-        <main>
-            <div class="signup">
-                <h2>Create a New Account</h2>
-                <form id="login-form" novalidate>
-                      <div class="form-group">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" placeholder="JohnDoe" required autocomplete="username" />
-                        <span class="error-message" id="username-error"></span>
-                      </div>
 
-                      <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
-                        <span class="error-message" id="email-error"></span>
-                      </div>
+    <main class="confirmation-container">
 
-                      <div class="form-group">
-                        <label for="phoneNo">Phone No:</label>
-                        <input type="tel" id="phoneNo" name="phoneNo" placeholder="0712345678" required />
-                        <span class="error-message" id="phone-error"></span>
-                      </div>
+        <section class="confirmation-card">
+            <h2>Thank you for your order 🎉</h2>
 
-                      <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" placeholder="At least 6 characters" required autocomplete="new-password"/>
-                        <span class="error-message" id="password-error"></span>
-                      </div>
+            <p id="conf-name"></p>
+            <p id="conf-email"></p>
+            <p id="conf-address"></p>
+            <p id="conf-phone"></p>
+            <p id="conf-total"></p>
+    
+            <a href="index.html" class="btn">Back to Home</a>
+        </section>
 
-                      <button type="submit">Sign Up</button>
-                    </form>
+   </main>        
 
 
-
-                </div>
-        </main>
-        <footer id="footer">
+    <footer id="footer">
             <div class="footer-container">
 
                 <div class="footer-section">
@@ -148,7 +133,6 @@
                 <p>Last Modified: <span id="last-modified"></span></p>
             </div>
         </footer>
-    </body>
-   
-   
+    
+</body>
 </html>
