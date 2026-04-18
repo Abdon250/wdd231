@@ -12,7 +12,7 @@ body{
     min-height: 100vh;
     display: flex;
     font-family: 'Arial', sans-serif;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -111,21 +111,21 @@ nav div a{
     color: #e3e3e3;
     text-decoration: none;
     border-radius: 7px;
-    border: 3px solid gray;
-    background-color: gray;
+    border: 3px solid #808080;
+    background-color: #808080;
 }
 
 .search input{
     width: 80%;
     height: 34px;
-    border: 1px solid gray;
+    border: 1px solid #808080;
     border-radius: 7px;
 }
 
 .search button{
     width: 50px;
     height: 36px;
-    background-color: gray;
+    background-color: #808080;
     color: #e3e3e3;
     border: none;
     border-radius: 7px;
@@ -201,7 +201,7 @@ main{
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 8px;
-    background: white;
+    background: #ffffff;
     transition: 0.3s;
 }
 
@@ -214,6 +214,7 @@ main{
     height: 160px;
     object-fit: cover;
     border-radius: 5px;
+    aspect-ratio: 1 / 1;
 }
 
 .cart{
@@ -223,7 +224,10 @@ main{
     border-radius: 10px;
     background-color: #f9f9f9;
 }
-
+.empty-cart{
+    display: none;
+    
+}
 .item-details img{
     width: 80px;
     border-radius: 5px;
@@ -257,7 +261,7 @@ main{
 }
 
 .product-modal::backdrop{
-    background: rgba(0,0,0,0.5);
+    background: #00000080;
 }
 
 @keyframes pop{
@@ -284,7 +288,7 @@ form:not(#search-form){
 }
 
 .error-message{
-    color: crimson;
+    color: #dc143c;
     font-size: 12px;
 }
 
@@ -318,7 +322,7 @@ footer{
 .footer-bottom{
     text-align: center;
     margin-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid #ffffff4d;
     padding-top: 10px;
 }
 
@@ -329,10 +333,6 @@ footer{
 
 #search-input:focus{
     outline: 2px solid #0c677e;
-}
-
-#product-list img{
-    aspect-ratio: 1 / 1;
 }
 
 @media (max-width: 600px){
